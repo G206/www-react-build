@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Speedi-Drone Pizza Order</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="styleSheet" href="style.css">
+</head>
+
+<body id="home_body">
+    <nav>
+      <div class="nav-wrapper black">
+        <a href="#" class="brand-logo left title_class"><i class="material-icons left">flight</i>Speedi-Drone Pizza</a>
+        <ul id="nav-mobile" class="right">
+          <li><a href="#"><i class="material-icons left">restaurant_menu</i>Menu Order</a></li>
+          <li><a href="#"><i class="material-icons left">local_pizza</i>About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <img src="images/pizza_drone_banner.jpg" alt="Pizza Delivery Banner" class="banner_class"><br />
+    </header>
+    <main>
+      <h1 class="title_class">Speedi-Drone Custom Pizza Order Form</h1>
+      <article>
+        <p>
+          Design your own very pizza with this handy online order form. We'll have it dropped in your laptop in 10 minutes or less
+          or our name isn't <span class="emphasis_class">Speedi-Drone Pizza!</span>
+        </p>
+      </article>
+      <form action="http://forms.miketackett.dx.am/pizzaOrder.php" method="get">
+        <section>
+          <fieldset>
+            <legend>
+              Customer Information
+            </legend>
+            <fieldset>
+              <legend>
+                Important!
+              </legend>
+              <label for="email">Enter a valid <span class="emphasis_class">e-mail address below</span>. Receipts and junk mail will be sent to this address:</label>
+              <input type="email" name="emailaddress" id="email"
+              placeholder="REQUIRED: Enter Your Email Address Here" required autofocus/>
+            </fieldset>
+            <label for="name">Name: </label><input type="text" name="customername" id="name"
+            placeholder="REQUIRED: Enter Your First Last Name"
+            required />
+            <label for="address">Address: </label><input type="text" name="address" id="address"
+            placeholder="REQUIRED: Enter Your Street Address"
+            required />
+            <label for="city">City: </label><input type="text" name="city" id="city"
+            placeholder="REQUIRED: Enter Your City"
+            required />
+            <label for="phone">Phone: </label><input type="tel" name="phone" id="phone"
+            placeholder="REQUIRED: Enter Your Phone Number"
+            required />
+          </fieldset>
+        </section>
+        <section>
+          <fieldset>
+            <legend>
+              Pizza Details
+            </legend>
+            <label for="pizza_qty">Quantity: </label><input type="number" name="qty"
+            placeholder = "Number of Pizza's Wanted"
+            required id="pizza_qty">
+
+            <label>Size: Please Select</label>
+            <select name="size" required="">
+              <option value="" disabled="" selected="">
+                Choose your Pizza Size
+              </option>
+              <option value="personal">
+                Personal 4 Slices
+              </option>
+              <option value="small">
+                Small 6 Slices
+              </option>
+              <option value="medium">
+                Medium 8 Slices
+              </option>
+              <option value="large">
+                Large 10 Slices
+              </option>
+              <option value="glutton">
+                Glutton 12 Slices
+              </option>
+            </select>
+            <fieldset>
+              <legend>
+                Bases (Choose one):
+              </legend>
+              <input type="radio" name="base" value="red" id="red"/><label for="red">Red Sauce</label>
+              <input type="radio" name="base" value="white" id="white"/><label for="white">White Sauce</label>
+              <input type="radio" name="base" value="bbq" id="bbq"/><label for="bbq">BBQ Sauce</label>
+              <input type="radio" name="base" value="garlic" id="garlic"/><label for="garlic">Garlic Rub</label>
+              <input type="radio" name="base" value="pesto" id="pesto"/><label for="pesto">Pesto base</label>
+              <input type="radio" name="base" value="castor" id="castor"/><label for="castor">Castor Oil</label>
+            </fieldset>
+            <fieldset>
+              <legend>
+                Cheeses (Choose as many as you want):
+              </legend>
+              <input type="checkbox" name="chesse[]" value="mozzarella" id="mozzarella" checked /><label for="mozzarella">Mozzarella</label>
+              <input type="checkbox" name="chesse[]" value="parmesan" id="parmesan" /><label for="parmesan">Parmesan</label>
+              <input type="checkbox" name="chesse[]" value="gorgonzola" id="gorgonzola" /><label for="gorgonzola">Gorgonzola</label>
+              <input type="checkbox" name="chesse[]" value="asiago" id="asiago" /><label for="asiago">Asiago</label>
+              <input type="checkbox" name="chesse[]" value="limburger_cheese" id="limburger_cheese" /><label for="limburger_cheese">Limburger</label>
+            </fieldset>
+            <fieldset>
+              <legend>
+                Cheeses (Choose as many as you want):
+              </legend>
+              <input type="checkbox" name="meat[]" value="pepperoni" id="pepperoni" checked /><label for="pepperoni">Pepperoni</label>
+              <input type="checkbox" name="meat[]" value="italian_sausage" id="italian_sausage" /><label for="italian_sausage">Italian Sausage</label>
+              <input type="checkbox" name="meat[]" value="canadian_bacon" id="canadian_bacon" /><label for="canadian_bacon">Canadian Bacon</label>
+              <input type="checkbox" name="meat[]" value="ground_beef" id="ground_beef" /><label for="ground_beef">Ground Beef</label>
+              <input type="checkbox" name="meat[]" value="limburger_meat" id="limburger_meat" /><label for="limburger_meat">Limburger</label>
+            </fieldset>
+            <fieldset>
+              <legend>
+                Veggies (Choose as many as you want):
+              </legend>
+              <input type="checkbox" name="veggies[]" value="green_peppers" id="green_peppers" /><label for="green_peppers">Green Peppers</label>
+              <input type="checkbox" name="veggies[]" value="mushrooms" id="mushrooms" /><label for="mushrooms">Mushrooms</label>
+              <input type="checkbox" name="veggies[]" value="onion" id="onion" /><label for="onion">Onion</label>
+              <input type="checkbox" name="veggies[]" value="pineapple" id="pineapple" /><label for="pineapple">Pineapple</label>
+              <input type="checkbox" name="veggies[]" value="jalapenos" id="jalapenos" /><label for="jalapenos">Jalepenos</label>
+            </fieldset>
+          </fieldset>
+        </section>
+
+        <section>
+          <fieldset>
+            <legend>
+              Comments
+            </legend>
+            <label for="comments">Tell us how we're doing. If we like your comments, we'll send you a free Speedi-Drone plush toy!</label>
+            <textarea name="comments" id="comments"
+            maxlength="250"
+            placeholder="No more than 250 characters long - but be sure to use lots of superlatives"></textarea>
+          </fieldset>
+        </section>
+        <div class="submit_class">
+          <div class="sub_class">
+            <input type="submit" id="submit" /><label for="submit"></label>
+          </div>
+          <div class="sub_class">
+            <input type="reset" id="reset" /><label for="reset"></label>
+          </div>
+        </div>
+      </form>
+
+      <footer class="footer_class">
+        <p>
+          <i class="material-icons left">local_pizza</i> Speedi-Drone Pizza &copy; 2016
+        </p>
+      </footer>
+    </main>
+    <img src="images/pizza_banner1.jpg" alt="pizza banner" class="banner_class"><br />
+	<script src="../iframeResizer.contentWindow.min.js" type="text/javascript"></script>
+
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script> -->
+</body>
+
+</html>

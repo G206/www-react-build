@@ -1,0 +1,213 @@
+nav p {
+	margin: 0;
+}
+nav p a {
+	font-family: "Franklin Gothic Heavy", Impact, "Arial Black", sans-serif;
+	color: purple;
+	text-decoration: none;
+	font-size: 2.5em;
+	background-color: inherit;
+}
+nav i {
+	color: white;
+}
+nav span {
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gold;
+	text-shadow:
+       3px 3px 0 gold,
+     -1px -1px 0 gold,
+      1px -1px 0 gold,
+      -1px 1px 0 gold,
+       1px 1px 0 gold;
+}
+nav ul {
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	float: right;
+}
+nav li a {
+	display: block;
+	padding: 12px 16px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 1.1em;
+	background-color: inherit;
+}
+nav li a:hover:not(.active) {
+	background-color: red;
+	color: inherit;
+}
+nav li a.active {
+	background-color: purple;
+	color: gold;
+}
+header img {
+	width: 100%;
+}
+body {
+	background-color: black;
+	color: white;
+	font-family: Rockwell, Cambria, "Century Schoolbook", serif;
+}
+.bodyIndex {
+	background-image: url(../_images/DragonTiger.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom center;
+}
+.bodyTech {
+	/*background-image: url(../_images/techTrendsLg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom center;*/
+}
+.bodyComputer {
+	background-image: url(../_images/computerLg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom center;
+}
+.bodyMobile {
+
+}
+h2 {
+	color: purple;
+}
+h3 {
+	margin: 0;
+}
+.indexWrapper {
+
+}
+.mobileWrapper {
+
+}
+.computerWrapper {
+	/*background-image: url(../_images/computerLg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: center;*/
+}
+.techWrapper {
+	/*background-image: url(../_images/techTrendsLg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: center;*/
+}
+main{
+	border: 1px solid red;
+	border-radius: 12px;
+	margin: 4% 2%;
+	padding: 0 18px;
+	font-family: "Franklin Gothic Heavy", Impact, "Arial Black", sans-serif;
+	color: black;
+	background-color: white;
+	opacity: .6;
+	filter: alpha(opacity=60);
+}
+.mainIndex {
+
+}
+.mainMobile {
+	background-color: white;
+	background-image: url(../_images/mobileBackground.jpg);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: bottom center;
+	color: black;
+}
+.mainComputer {
+
+}
+.mainTech {
+	background-color: white;
+	background-image: url(../_images/tech.jpg);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: bottom center;
+	color: black;
+}
+.articleText {
+	font-family: "Rockwell", Century, serif;
+	margin: 4px 12px;
+}
+article p {
+	margin: 6px 0;
+}
+.articleWrapper {
+	display: flex;
+/*	Height is only temporary till I get actual text to populate */
+	height: 600px;
+}
+.articleSummary {
+	margin: 0;
+/*	Height is only temporary till I get actual text to populate */
+	height: 185px;
+}
+.articleMain {
+	width: 65%;
+	padding-right: 12px;
+}
+.articleAside {
+	width: 35%;
+	padding: 12px;
+	margin: 0 0 18px 0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+	opacity: .6;
+	filter: alpha(opacity=60);
+    box-shadow: 5px 5px 10px rgba(10,10,10,.9);
+}
+footer {
+	width: 100%;
+	background-color: gold;
+	opacity: .6;
+	filter: alpha(opacity=60);
+	margin: 4% 0 0;
+	font-family: "Rockwell", Century, serif;
+	font-weight: 600;
+}
+footer p {
+	margin: 0 12px;
+}
+footer input {
+	height: 32px;
+}
+footer button {
+	height: 32px
+}
+.footerContactWrapper {
+	color: black;
+	font-size: 1.25em;
+}
+.footerSubscribe {
+	margin: 18px;
+	float: left;
+}
+.footerFollow {
+	margin: 18px;
+	float: right;
+	display: flex;
+}
+.footerCopy {
+	display: flex;
+	clear: left;
+	color: purple;
+	font-size: .9em;
+	font-weight: bold;
+}
+.footerCopy p {
+	margin: 18px 0 18px 18px;
+}
+footer i {
+	color: purple;
+	font-weight: bold;
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Project 3 - Media Slide Show</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- Compiled and minified CSS -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+	<link rel="styleSheet" href="style.css">
+</head>
+<body>
+	<div class="display">
+	<!-- Picture frame -->
+		<main class ="outerframe">
+		<!-- Title Frame -->
+			<div class="titleframe">
+				Artistry in Hardware Engineering
+			</div>
+		<!-- Windows for Images to Display -->
+			<div class="innerframe">
+				<img src="img/dragon_tiger2.png" alt="Media Image" class="classimg" />
+			</div>
+		<!-- Caption Window -->
+			<div class="msgframe">
+				Click NEXT or AUTO PLAY to Begin
+			</div>
+		<!-- Button Layout -->
+			<div class="buttonframe">
+				<!-- Buttons for Previous Image -->
+				<div class="button">
+					<button class="btn waves-effect waves-light silver black-text z-depth-4" id="button_prev">PREV
+			    <i class="material-icons left">skip_previous</i>
+			  	</button>
+				</div>
+				<!-- Button for Autorun -->
+				<div class="button">
+					<button class="btn waves-effect waves-light silver black-text z-depth-4" id="button_auto">AUTO PLAY
+					<i class="material-icons left">autorenew</i>
+					</button>
+				</div>
+				<!-- Button to STOP Auto Play -->
+				<div class="button">
+					<button class="btn waves-effect waves-light silver black-text z-depth-4" id="button_stop">STOP
+					<i class="material-icons left">stop</i>
+					</button>
+				</div>
+				<!-- Buttons for Next Image -->
+				<div class="button">
+					<button class="btn waves-effect waves-light silver black-text z-depth-4" id="button_next">NEXT
+			    <i class="material-icons right">skip_next</i>
+			  	</button>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<script src="../iframeResizer.contentWindow.min.js" type="text/javascript"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>
