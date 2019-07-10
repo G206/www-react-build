@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Project 1.5 - Game</title>
+    <!-- Library for the Arrows in the game -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="styleSheet" type="text/css" href="_css/master.css">
+</head>
+<body>
+    <header>
+		<h1>Dungeon Explorer</h1>
+	</header>
+    <main>
+        <!-- Game elements are basically divided into 2 main section, Left and Right -->
+        <!-- Left Section comprise of image display, command results, and control boxes -->
+
+		<div class="left">
+			<section class="display">
+
+                <!-- Image display for game -->
+				<img id="displayOutput" src="_images/entrance.jpg" alt="Current Image in the Game" width="640" height="480">
+			</section>
+			<section class="dialog">
+				<h3 class="title">Command Results</h3>
+
+                <!-- Text results of commands given -->
+				<div id="commandOutput" class="std_text">
+				</div>
+			</section>
+			<section class="controls">
+
+                <!-- Command Input Box -->
+				<div class="input_box">
+					<p class="input_title">Enter Command Below. Enter Help or click Help button for assistance. You can use the optional Arrow buttons to enter move commands.</p>
+					<input id="commandInput" type="text" placeholder="Enter your command here" size=32 autofocus>
+
+                    <!-- Button Layout -->
+					<div class="btn_array">
+						<button id="btnSubmit">Submit</button>
+                        <button id="btnClear">Clear</button>
+						<button id="btnHelp">Help</button>
+						<button id="btnSave">Save</button>
+                        <button id="btnNew">New</button>
+					</div>
+				</div>
+
+                <!-- Arrow Control Movement Box -->
+				<div class="arrow_box">
+					<div class="arrows"><button id="north" class="arrows"><i class="material-icons">arrow_upward</i><br />N</button></div>
+					<div class="ew_arrows">
+						<div class="arrows"><button id="west" class="arrows"><i class="material-icons">arrow_back</i><br />W</button></div>
+						<div class="arrows"><button id="east" class="arrows"><i class="material-icons">arrow_forward</i><br />E</button></div>
+					</div>
+					<div class="arrows"><button id="south" class="arrows"><i class="material-icons">arrow_downward</i><br />S</button></div>
+				</div>
+			</section>
+		</div>
+
+        <!-- Right Section - Map and History Output -->
+		<div class="right">
+			<section class="map">
+           		<h3 class="title">MAP</h3>
+            	<p class="title"><span class="red">RED</span> Cell = Current Location</p>
+
+                <!-- Elements that make up the Map -->
+                <div class="map_wrapper">
+					<div id="ent" class="map_cell">
+						Entrance
+					</div>
+               		<div id="stage">
+
+              		</div>
+            	</div>
+			</section>
+
+            <!-- Command History Box -->
+			<section class="history">
+				<h3 class="title">Command History / Help Display</h3>
+				<div class="historyWrapper">
+                    <div id="historyOutput" class="std_text">
+    					History Output
+    				</div>
+                </div>
+			</section>
+		</div>
+    </main>
+<!--	Footer Copyright-->
+    <footer>Copyright &copy; Gabe</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../iframeResizer.contentWindow.min.js" type="text/javascript"></script>
+    <script src="_scripts/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+  font-family: "Rockwell", Century, serif;
+}
+main{
+margin: 0px 2%;
+text-align: left;
+}
+main article span {
+  font-weight: 600;
+  font-style: oblique;
+}
+fieldset legend {
+  font-family: "Franklin Gothic Heavy", Impact, sans-serif;
+  color: red;
+  font-size: 125%;
+}
+fieldset fieldset legend {
+  font-family: "Franklin Gothic Heavy", Impact, sans-serif;
+  color: black;
+  font-size: 100%;
+}
+fieldset label {
+  color: black;
+  font-weight: 600;
+  font-size: 100%;
+  font-variant: small-caps;
+}
+fieldset fieldset label {
+  color: black;
+  font-weight: 100;
+  font-size: 100%;
+  font-variant: normal;
+  margin-right: 3%;
+}
+fieldset fieldset {
+  margin: 16px auto;
+}
+form {
+  margin: 2.5%;
+  padding: 1% 1% 1% 2%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 10px rgba(55,55,55,.9);
+
+}
+form select {
+  display: inline-block;
+}
+form section {
+  margin-bottom: 2%;
+}
+textarea {
+  width: 100%;
+  height: 5rem;
+}
+footer {
+  margin: 0% 2.5%;
+}
+
+.title_class{
+  font-family: "Franklin Gothic Heavy", Impact, sans-serif;
+  color: steelblue;
+  font-size: 250%;
+}
+.footer_class{
+  font-size: 90%;
+  color: red;
+  font-family: "Rockwell", Century, serif;
+}
+.banner_class {
+  width: 100%;
+  text-align: center;
+}
+.emphasis_class {
+  font-weight: 600;
+  font-style: oblique;
+}
+.submit_class {
+  display: flex;
+  text-align: center;
+  width: 100%
+}
+.sub_class {
+  width: 50%;
+  margin: 2% 5% ;
+  font-family: "Franklin Gothic Heavy", Impact, sans-serif;
+  color: blue;
+  font-size: 150%;
+}
