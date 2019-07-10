@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gabe's Technology BLOG - Registration</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="styleSheet" href="_css/style.css">
+</head>
+
+<body class="bodyJoin">
+    <header>
+<!--    Top Logo / Login Bar-->
+    <div class="top" id="navTop">
+    	<p class="logo"><a href="index.html"><i class="material-icons left">computer</i> <span>Gabe's Blog</span></a></p>
+    	<p class="join"><a href="join.html"><span>Login/Join</span> <i class="material-icons right">person_add</i></a></p>
+    </div>
+     <!-- NAV BAR -->
+    <nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="tech.html">Tech Trends</a></li>
+			<li><a href="computer.html">Computer Gear</a></li>
+			<li><a href="mobile.html">Mobile</a></li>
+		</ul>
+    </nav>
+<!-- Blog Logo -->
+      <img src="_images/banner.jpg" alt="Computer Blog Banner" class="banner_class"><br />
+    </header>
+    <!-- Start of Blog -->
+    <div class="joinWrapper">
+        <main class="mainJoin">
+			<h1>New Account Registration</h2>
+			<form>
+				<fieldset>
+					<legend>Required Information</legend>
+					<div class="emailContainer">
+						<label for="emailReg">Email</label>
+						<input type="email" name="emailAddress" id="emailReg"
+						placeholder="Enter Your Email Address" required autofocus/>
+					</div>
+					<div class="usernameContainer">
+						<label for="usernameReg">User Name</label>
+						<input type="text" name="userName" id="usernameReg"
+						placeholder="Enter Your Requested User Name for the Site" required />
+					</div>
+					<div class="passwordContainer">
+						<label for="usernameReg">Password</label>
+						<input type="password" name="passWord" id="passwordReg"
+						placeholder="Enter Your Requested Password" required />
+						<input type="password" name="passWord" id="passwordReg2"
+						placeholder="Re-enter Password" required />
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Optional Information</legend>
+					<div class="nameFContainer">
+						<label for="nameFReg">First Name</label>
+						<input type="text" name="nameF" id="nameFReg"
+						placeholder="Enter Your First Name. If no name is entered, your User Name will be displayed." />
+					</div>
+					<div class="nameLContainer">
+						<label for="nameLReg">Last Name</label>
+						<input type="text" name="nameL" id="nameLReg"
+						placeholder="Enter Your Last Name. If no last name is entered, only your first will be displayed." />
+					</div>
+					<div class="phoneContainer">
+						<label for="phoneReg">Phone Number</label>
+						<input type="tel" name="phone" id="phoneReg"
+						placeholder="Enter Your Phone Number. This is used for Account Recovery purposes." />
+					</div>
+					<div class="streetContainer">
+						<label for="address1Reg">Mailing Address</label>
+						<input type="text" name="address1" id="address1Reg"
+						placeholder="Enter Line 1 of your Mailing Address." />
+						<input type="text" name="address2" id="address2Reg"
+						placeholder="Enter Line 2 of your Mailing Address if applicable." />
+					</div>
+					<div class="addressContainer">
+						<label for="streetReg">City, State, Postal Code</label>
+						<div class="block">
+							<input type="text" name="city" id="streetReg"
+							placeholder="Enter City Name." />
+                        </div>
+                        <div class="block">
+							<select class="block" name="state" id="stateReg">
+								<option value="" disabled="" selected="">Choose your State</option>
+								<option value="AL">Alabama</option>
+								<option value="AK">Alaska</option>
+								<option value="AZ">Arizona</option>
+								<option value="AR">Arkansas</option>
+								<option value="CA">California</option>
+								<option value="CO">Colorado</option>
+								<option value="CT">Connecticut</option>
+								<option value="DE">Delaware</option>
+								<option value="DC">District Of Columbia</option>
+								<option value="FL">Florida</option>
+								<option value="GA">Georgia</option>
+								<option value="HI">Hawaii</option>
+								<option value="ID">Idaho</option>
+								<option value="IL">Illinois</option>
+								<option value="IN">Indiana</option>
+								<option value="IA">Iowa</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="ME">Maine</option>
+								<option value="MD">Maryland</option>
+								<option value="MA">Massachusetts</option>
+								<option value="MI">Michigan</option>
+								<option value="MN">Minnesota</option>
+								<option value="MS">Mississippi</option>
+								<option value="MO">Missouri</option>
+								<option value="MT">Montana</option>
+								<option value="NE">Nebraska</option>
+								<option value="NV">Nevada</option>
+								<option value="NH">New Hampshire</option>
+								<option value="NJ">New Jersey</option>
+								<option value="NM">New Mexico</option>
+								<option value="NY">New York</option>
+								<option value="NC">North Carolina</option>
+								<option value="ND">North Dakota</option>
+								<option value="OH">Ohio</option>
+								<option value="OK">Oklahoma</option>
+								<option value="OR">Oregon</option>
+								<option value="PA">Pennsylvania</option>
+								<option value="RI">Rhode Island</option>
+								<option value="SC">South Carolina</option>
+								<option value="SD">South Dakota</option>
+								<option value="TN">Tennessee</option>
+								<option value="TX">Texas</option>
+								<option value="UT">Utah</option>
+								<option value="VT">Vermont</option>
+								<option value="VA">Virginia</option>
+								<option value="WA">Washington</option>
+								<option value="WV">West Virginia</option>
+								<option value="WI">Wisconsin</option>
+								<option value="WY">Wyoming</option>
+							</select>
+						</div>
+                        <div class="block">
+							<input type="text" name="postal" id="postalReg"
+							placeholder="Enter Postal Code." />
+                        </div>
+					</div>
+                    <fieldset class="genderContainer">
+                        <legend>Gender</legend>
+                        <div class="block">
+                            <input type="radio" name="gender" value="male" id="maleReg"/><label for="maleReg">Male</label>
+                        </div>
+                        <div class="block">
+                            <input type="radio" name="gender" value="female" id="femaleReg"/><label for="femaleReg">Female</label>
+                        </div>
+                        <div class="block">
+                            <input type="radio" name="gender" value="noAnswer" id="otherReg"/><label for="otherReg">No Answer</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="preferencesContainer">
+                        <legend>Preferences</legend>
+                        <div class="block">
+                            <input type="checkbox" name="preferences[]" value="displayUser" id="displayUserReg"/><label for="displayUserReg">Always Display UserName</label>
+                        </div>
+                        <div class="block">
+                            <input type="checkbox" name="preferences[]" value="useEmail" id="useEmailReg"/><label for="useEmailReg">OK to communicate via Email</label>
+                        </div>
+                        <div class="block">
+                            <input type="checkbox" name="preferences[]" value="usePhone" id="usePhoneReg"/><label for="usePhoneReg">OK to communicate via SMS</label>
+                        </div>
+                        <div class="block">
+                            <input type="checkbox" name="preferences[]" value="useMail" id="useMailReg"/><label for="useMailReg">OK to communicate via Mail</label>
+                        </div>
+                    </fieldset>
+				</fieldset>
+                <fieldset>
+                    <legend>Comments</legend>
+                    <label for="commentsReg">Feedback - Tell us anything you would like about our site</label>
+                    <textarea name="comments" id="commentsReg" rows="4"
+                    maxlength="500"
+                    placeholder="No more than 500 characters long - but be sure to use lots of superlatives"></textarea>
+                </fieldset>
+                <div class="block submit">
+                    <input type="submit" id="btnSubmit" value="Register" />
+                </div>
+                <div class="block submit">
+                    <input type="reset" id="btnReset" value="Reset Form" />
+                </div>
+			</form>
+		</main>
+<!-- Footer Block -->
+	    <footer>
+	    	<div class="footerContactWrapper">
+<!--	    	Form to have user subscribe to the newsletter-->
+	    		<form class="footerSubscribe ">
+					<input id="subscribeInput" type="email" placeholder="Sign up for our newsletter" size="28">
+					<input id="btnSubscribe" type="submit" value="Subscribe">
+	    		</form>
+<!--	    		Links to Social Media -->
+				<div class="footerFollow ">
+                        <ul>
+                            <li>Follow Us</li>
+                            <li><a href="http://facebook.com" title="Be our friend" target="_blank" class="facebook">Facebook</a>
+                                <li><a href="https://plus.google.com/" title="Google Plus" target="_blank" class="google">Google Plus</a></li>
+                                <li><a href="http://www.linkedin.com" title="Let's connect" target="_blank" class="linkedin">LinkedIn</a></li>
+                                <li><a href="http://www.twitter.com/" title="Follow us!" target="_blank" class="twitter">Twitter</a></li>
+                            <li><a href="http://www.youtube.com/" title="Watch us!" target="_blank" class="youtube">YouTube</a></li>
+                        </ul>
+				</div>
+	    	</div>
+<!--	    	Copyright Material-->
+            <div class="footerCopy">
+                <p><a href="#navTop"><i class="material-icons left">computer</i></a></p>
+                <p>Stay Tuned for More Great Tech Talk @ Gabe's Technology Blog &copy; 2016</p>
+            </div>
+	    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Project 2 - Game</title>
+    <!-- Library for the Arrows in the game -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="styleSheet" type="text/css" href="_css/master.css">
+</head>
+<body>
+    <header>
+		<h1>Water World</h1>
+	</header>
+    <div id="modalSplash" class="modalBox">
+        <div id="splashStart" class="splash">
+            <p class="black">
+                 This game requires that the display be set at a minimum resolution of SXGA (1280x1024), full 1080P is preferred. Otherwise, you will not be able to view all the neccessary buttons and window displays. If unable, please zoom out (-) in your browser window to view all elements.
+            </p>
+            <header>
+        		<h1>Water World</h1>
+        	</header>
+            <div class="">
+                <h2>Purpose of this game is to get to the home port with the maximum number of experience points and gold without getting eaten by the Sea Monster or running out of food. You get experience points for every time you move but every move cost you 1 food. You find food and gold by searching the islands. Every gold piece is equal to 10 experience points in the end total. <br><br>You have the option to fight the Pirate Ships. You will get 10 experience points for attempting the fight. If you win, you get 50 experience points and a random amount of gold found. If you loose, you will loose Hit Points and Gold.<br><br>Valid Commands are as follows: 'north', 'south', 'east', 'west', and 'help'. <br><br>You can optionally use the direction arrow buttons to move around or arrow KEYS on your keyboard. <br><br>Once commands are entered, you can either click the 'Submit' button or hit the 'Enter' key. Game ends once you make it to the Home Port, get eaten by the Sea Monster, run out of food, or loose all your Hit Points.</h2>
+            </div>
+            <div>
+                <h2>Click on the START button below to start the game</h2>
+            </div>
+            <div>
+                <button id="btnStart">START</button>
+            </div>
+            <!--	Footer Copyright-->
+            <footer>Copyright &copy; Gabe</footer>
+        </div>
+        <div id="splashEnd" class="splash">
+            <header>
+        		<h1>Water World</h1>
+        	</header>
+            <div>
+                <h2 id="endOutput"></h2>
+            </div>
+            <div>
+                <h2>Game Over. Hope you had fun.</h2>
+            </div>
+                <h2>Final Score: <span id="score" class="black"></span></h2>
+            <div>
+                <h2>Click on the START button below if you wish to play again</h2>
+            </div>
+            <div>
+                <button id="btnReStart">START</button>
+            </div>
+            <!--	Footer Copyright-->
+            <footer>Copyright &copy; Gabe</footer>
+        </div>
+    </div>
+    <main id="theGame" class="gameMain">
+
+        <!-- Game elements are basically divided into 2 main section, Left and Right -->
+        <!-- Left Section comprise of image display, command results, and control boxes -->
+        <div class="left">
+            <section class="display">
+                <div class="title">
+                    <h3 class="title">Game Map</h3>
+                    <p class="title"><span class="red">Destroyer Ship</span>  = Current Location</p>
+                </div>
+                <div id="gameOutput" class="map mapImage">
+                    <!-- Elements that make up the Map -->
+                    <div class="map_wrapper">
+                        <div id="stage">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Elements that make up the stats in the game -->
+            <section class="dialog">
+                <h3 class="title">Command Results</h3>
+                <div class="statOutput std_text">
+                    <h4>Score: </h4>
+                    <p id="scoreOutput"> 0 </p>
+                    <h4>Experience: </h4>
+                    <p id="EPOutput"> 0</p>
+                    <h4>Hit Points: </h4>
+                    <p id="HPOutput">20</p>
+                    <h4>Gold: </h4>
+                    <p id="goldOutput">0</p>
+                    <h4>Food: </h4>
+                    <p id="foodOutput">20</p>
+                </div>
+                <!-- Text results of commands given -->
+                <div id="commandOutput" class="std_text">
+                Command Output
+                </div>
+            </section>
+            <section class="controls">
+
+                <!-- Command Input Box -->
+                <div class="input_box">
+                    <p class="input_title">Enter Command Below. Enter Help or click Help button for assistance. You can use the optional Arrow buttons or Arrow keys to enter move commands.</p>
+                    <input id="commandInput" type="text" placeholder="Enter your command here" size=40 autofocus>
+
+                    <!-- Button Layout -->
+                    <div class="btn_array">
+                        <button id="btnSubmit">Submit</button>
+                        <button id="btnClear">Clear</button>
+                        <button id="btnHelp">Help</button>
+                        <button id="btnExit">EXIT</button>
+                        <button id="btnAudio">Play Audio</button>
+                        <button id="btnStop">Stop Audio</button>
+                        <audio id="audio" src="_assets/crisp_ocean.mp3" ></audio>
+                    </div>
+                </div>
+
+                <!-- Arrow Control Movement Box -->
+                <div class="arrow_box">
+                    <div class="arrows"><button id="north" class="arrows"><i class="material-icons">arrow_upward</i><br />N</button></div>
+                    <div class="ew_arrows">
+                        <div class="arrows"><button id="west" class="arrows"><em class="material-icons">arrow_back</em><br>
+                      W</button></div>
+                        <div class="arrows"><button id="east" class="arrows"><i class="material-icons">arrow_forward</i><br />E</button></div>
+                    </div>
+                    <div class="arrows"><button id="south" class="arrows"><i class="material-icons">arrow_downward</i><br />S</button></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Section - History Output -->
+        <div class="right">
+            <!-- Command History Box -->
+            <section class="history">
+                <h3 class="title">Command History / Help Display</h3>
+                <div class="historyWrapper">
+                    <div id="historyOutput" class="std_text">
+                        History Output
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+<!--	Footer Copyright-->
+    <footer>Copyright &copy; Gabe</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../iframeResizer.contentWindow.min.js" type="text/javascript"></script>
+    <script src="_scripts/scripts.js"></script>
+</body>
+</html>

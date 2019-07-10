@@ -1,0 +1,117 @@
+/* CSS Document */
+/*Set overall Body styles*/
+body {
+	font-family: "Franklin Gothic Heavy", Impact, "Arial Black", sans-serif;
+	background-color: beige;
+	color: black;
+}
+main {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 480px;
+	margin: auto;
+	background-color: white;
+	color: black;
+}
+/*Title Block*/
+.title {
+	font-size: 2em;
+	margin: 16px 0 12px 16px;
+}
+.heading {
+	font-family: Rockwell, Cambria, "Century Schoolbook", serif;
+	margin: 12px 0 12px 32px;
+}
+/*Input Color Blocks*/
+.RGB {
+	display: flex;
+	font-family:  Rockwell, Cambria, "Century Schoolbook", serif;
+	margin: 12px 0 12px 32px;
+	height: 80px;
+}
+.inputContainer {
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	background-color: beige;
+	color: black;
+	margin: 0 10px 0 0;
+}
+.inputTitle {
+	margin: 8px 0 8px 8px;
+	font-weight: bold;
+	background-color: inherit;
+}
+.redTitle	{
+	color: red;
+}
+.greenTitle	{
+	color: green;
+}
+.blueTitle	{
+	color: blue;
+}
+.inputBox {
+	margin: 4px 6px;
+	width: 72px;
+	height: 24px;
+}
+#redInput {
+	border: 2px solid red;
+}
+#greenInput {
+	border: 2px solid green;
+}
+#blueInput {
+	border: 2px solid blue;
+}
+.buttonBlock {
+	margin: 0;
+}
+.buttonBox {
+	margin: 0 0 10px 0;
+}
+.button {
+	font-family: Rockwell, Cambria, "Times New Roman", serif;
+	font-weight: bold;
+	background-color: beige;
+	color: black;
+	border: 1px solid black;
+	border-radius: 4px;
+	height: 34px;
+}
+/*Output Color Box*/
+#outputBox {
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	margin: 0 16px;
+	height: 120px;
+	text-align: center;
+}
+#outputText {
+	font-family: aladin, "Franklin Gothic Heavy", "Arial Black", sans-serif;
+	color: white;
+	font-size: 2em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+	text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+/*Hex Value Output*/
+.hexBox {
+	margin: 10px 16px;
+}
+#hexValue {
+	color: blueviolet;
+}
+/*Footer Copyright Block*/
+footer {
+	text-align: center;
+	font-family: Rockwell, Cambria, "Times New Roman", serif;
+	font-size: .8em;
+	width: 480px;
+	margin: 10px auto;
+}

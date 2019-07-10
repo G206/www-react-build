@@ -1,0 +1,438 @@
+/* Master CSS Sheet */
+body {
+	background-color: black;
+	color: white;
+	font-family: Rockwell, Cambria, "Century Schoolbook", serif;
+	margin: 0;
+	padding: 0;
+}
+.bodyIndex {
+	background-image: url(../_images/dragon_tiger.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom center;
+}
+.bodyTech {
+	background-color: black;
+	color: white;
+}
+.bodyComputer {
+	background-color: white;
+	color: black;
+}
+.bodyMobile {
+	background-color: black;
+	color: white;
+}
+.bodyJoin {
+	background-color: black;
+	color: white;
+}
+h1 {
+	background-color: inherit;
+	color: purple;
+	margin: 24px;
+}
+h2 {
+	color: red;
+	background-color: inherit;
+	margin: 0;
+	font-size: 24px;
+}
+.block {
+	display: inline-block;
+}
+/*Styling  related to header section*/
+i.left {
+	float: left;
+	margin: 0 12px 0 0;
+	padding: 0;
+}
+i.right {
+	float: right;
+	margin: 0 0 0 12px;
+	padding: 0;
+}
+header p a {
+	text-decoration: none;
+	color: purple;
+	background-color: inherit;
+}
+header i {
+	color: white;
+	background-color: inherit;
+}
+header .top {
+	font-family: "Franklin Gothic Heavy", Impact, "Arial Black", sans-serif;
+	margin: 9px 6px;
+}
+header .logo {
+	float: left;
+	font-size: 1.8em;
+	margin: inherit;
+}
+header .logo span {
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gold;
+	text-shadow:
+      3px 3px 0 gold,
+      -1px -1px 0 gold,
+      1px -1px 0 gold,
+      -1px 1px 0 gold,
+      1px 1px 0 gold;
+}
+header .join {
+	float: right;
+	font-size: 1.5em;
+	margin: inherit;
+}
+header .join a:hover {
+	color: gold;
+	background-color: black;
+}
+header img {
+	width: 100%;
+}
+.bodyComputer header {
+	background-color: black;
+	color: white;
+}
+/*Styling specific to the NAV bar*/
+nav {
+	clear: left;
+}
+nav p {
+	margin: 0;
+}
+nav ul {
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	float: right;
+}
+nav li a {
+	display: block;
+	padding: 12px 16px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 1.1em;
+	background-color: inherit;
+}
+nav li a:hover:not(.active) {
+	background-color: red;
+	color: inherit;
+}
+nav li a.active {
+	background-color: purple;
+	color: gold;
+}
+/*Saved for future use*/
+/*.indexWrapper {}
+.mobileWrapper {}
+.computerWrapper {}
+.techWrapper {}
+.joinWrapper {}*/
+/*Styling related to main body of web site*/
+main{
+	border: 1px solid red;
+	border-radius: 12px;
+	margin: 4% 2%;
+	padding: 0 18px;
+	font-family: "Franklin Gothic Heavy", Impact, "Arial Black", sans-serif;
+	color: black;
+	background-color: white;
+	opacity: .8;
+	filter: alpha(opacity=80);
+	min-height: 600px;
+}
+.mainIndex {
+	background-color: white;
+	color: black;
+}
+.mainMobile {
+	background-color: white;
+	background-image: url(../_images/mobileBackground.jpg);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: bottom center;
+	color: black;
+}
+.mainComputer {
+	background-color: black;
+	color: gold;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.mainTech {
+	color: black;
+	background-color: white;
+	background-image: url(../_images/tech.jpg);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: bottom center;
+}
+.mainJoin {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.mainComputer .articleBackground {
+	background-image: url(../_images/computerLg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom center;
+	opacity: .7;
+	filter: alpha(opacity=70);
+}
+.mainComputer .articleWrapper {
+	font-weight: 500;
+}
+/*Styling specific to the articles in the blog*/
+.articleWrapper {
+	display: flex;
+	margin: 0 24px;
+}
+.articleSummary {
+	display: flex;
+	margin: 0;
+/*	Height is only temporary till I get actual text to populate */
+	min-height: 240px;
+}
+.articleSummary > div {
+	width: 50%;
+	margin: 0 24px;
+}
+.articleSummary img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.articleMain {
+	padding-right: 12px;
+	width: 75%;
+}
+.articleAside {
+	padding: 12px;
+	width: 25%;
+	margin: 0 0 18px 0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+	opacity: .8;
+	filter: alpha(opacity=80);
+    box-shadow: 5px 5px 10px rgba(10,10,10,.9);
+}
+.mainComputer .articleAside {
+	background-color: white;
+	color: black;
+}
+.articleText {
+	font-family: "Rockwell", Century, serif;
+	margin: 6px 12px 6px 18px;
+}
+article p {
+	margin: 0 0 18px 0;
+}
+/*Styling specific to the FORM on the New Account page*/
+.mainJoin form {
+	margin: 24px;
+}
+form .submit input{
+	height: 48px;
+	width: 128px;
+	margin: 0 36px 0 0;
+	background-color: purple;
+	color: gold;
+	font-family: "Franklin Gothic Heavy", Impact, "Arial Black", sans-serif;
+	font-size: 1.2em;
+}
+fieldset {
+	margin: 0 0 18px 0;
+}
+fieldset div {
+	margin: 0 12px;
+}
+fieldset label {
+	display: block;
+	font-family: "Franklin Gothic", Arial, sans-serif;
+	font-weight: 400;
+	color: gray;
+	background-color: inherit;
+	margin: 18px 0 6px 0;
+}
+fieldset input {
+	height: 32px;
+	width: 100%;
+}
+fieldset input:nth-child(3) {
+	margin: 9px 0 0 0;
+}
+fieldset textarea {
+	width: 100%;
+}
+fieldset select {
+	height: 36px;
+}
+fieldset fieldset {
+	margin: 18px 12px;
+}
+fieldset fieldset .block {
+	width: 72px;
+	text-align: center;
+	font-size: .8em;
+}
+fieldset fieldset input {
+	margin: 6px 0;
+	height: 24px;
+}
+fieldset fieldset label {
+	margin: 0;
+}
+/*Styling specific to the TABLE*/
+.articleTable {
+	overflow-x: auto;
+	margin: 24px 36px;
+	text-align: left;
+}
+.articleTable div:first-child {
+	margin: 0 0 18px;
+}
+.articleTable img {
+	width: 100%;
+}
+table {
+	width: 100%;
+	min-width: 720px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+table th.col1 {
+	width: 12%;
+}
+table th.col2 {
+	width: 30%;
+}
+table th.col3 {
+	width: 8%;
+}
+table th.col4 {
+	width: 25%;
+}
+table th.col5 {
+	width: 25%;
+}
+table th {
+	padding: 12px;
+}
+table td {
+	font-family: "Rockwell", Century, serif;
+	font-size: .85em;
+	vertical-align: text-top;
+	padding: 9px;
+}
+table tr:nth-child(even) {
+	background-color: gray;
+    color: white;
+}
+/*Styling specific to the FOOTER section*/
+footer {
+	width: 100%;
+	background-color: gold;
+	color: inherit;
+	margin: 4% 0 0;
+	padding: 0;
+	font-family: "Franklin Gothic", Arial, sans-serif;
+	font-weight: 400;
+}
+footer input {
+	height: 34px;
+}
+footer input[type=submit]{
+	height: 40px;
+}
+footer .block {
+	height: 40px;
+}
+.footerContactWrapper {
+	color: black;
+	background-color: inherit;
+	font-size: 32px;
+	display: flex;
+}
+.footerSubscribe {
+	margin: 18px;
+}
+.footerFollow {
+	margin: 18px;
+}
+.footerCopy {
+	clear: left;
+	display: flex;
+	color: purple;
+	background-color: inherit;
+	font-size: .9em;
+	font-weight: bold;
+}
+.footerCopy p {
+	margin: 18px 0 18px 18px;
+}
+footer i {
+	background-color: inherit;
+	color: purple;
+	font-weight: bold;
+}
+/*Styling specific to the Social Media section in footer*/
+footer ul {
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0;
+}
+footer li {
+	float: left;
+	margin: 0 9px 0 0;
+}
+footer li:first-child {
+	margin: 0 18px 0 0;
+	padding: 6px 0 0 0;
+}
+footer li a {
+	display: block;
+	text-decoration: none;
+	width: 45px;
+	height: 45px;
+	text-indent: -999em ;
+	background: url(../_images/social_mini.png) no-repeat;
+}
+footer li a.facebook {
+	background-position: 0 0;
+}
+footer li a.google {
+	background-position: -135px 0;
+}
+footer li a.linkedin {
+	background-position: -180px 0;
+}
+footer li a.twitter {
+	background-position: -360px 0;
+}
+footer li a.youtube {
+	background-position: -450px 0;
+}
+footer li a.facebook:hover {
+	background-position: 0 -45px;
+}
+footer li a.google:hover {
+	background-position: -135px -45px;
+}
+footer li a.linkedin:hover {
+	background-position: -180px -45px;
+}
+footer li a.twitter:hover {
+	background-position: -360px -45px;
+}
+footer li a.youtube:hover {
+	background-position: -450px -45px;
+}

@@ -1,0 +1,56 @@
+div.display {
+	background-image: url(img/lg_oled_md.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top center;
+	height: 820px;
+}
+.outerframe {
+	margin: 10px auto;
+	width: 998px;
+	height: 570px;
+
+}
+.titleframe {
+	font-family: "Franklin Gothic Heavy", Impact, sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	background-color: black;
+	margin: 0 auto;
+	width: 990px;
+	height: 40px;
+
+}
+.innerframe {
+	text-align: center;
+	margin: 5px auto;
+	width: 990px;
+	height: 434px;
+
+}
+.classimg {
+	max-width: 100%;
+	max-height: 100%;
+}
+.msgframe {
+	font-family: "Rockwell", Century, serif;
+	text-align: center;
+	font-size: 1.1em;
+	color: yellow;
+	background-color: black;
+	margin: 0 auto;
+	width: 990px;
+	height: 36px;
+
+}
+.buttonframe {
+	display: flex;
+	margin: 3px auto;
+	width: 990px;
+	height: 36px;
+
+}
+.button {
+	margin: auto;
+}
